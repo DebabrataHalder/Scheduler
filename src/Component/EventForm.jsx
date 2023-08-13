@@ -6,7 +6,6 @@ const EventForm = ({ addEvent }) => {
   const [endDate, setEndDate] = useState('');
   const [startTime, setStartTime] = useState('');
   const [endTime, setEndTime] = useState('');
-  const [color, setColor] = useState('#006400'); // Default color
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +16,6 @@ const EventForm = ({ addEvent }) => {
       setEndDate('');
       setStartTime('');
       setEndTime('');
-      setColor('#006400'); // Reset color after adding event
     }
   };
 
