@@ -3,17 +3,21 @@ import React, { useState } from 'react';
 const EventForm = ({ addEvent }) => {
   const [title, setTitle] = useState('');
   const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
+  // const [endDate, setEndDate] = useState('');
   const [startTime, setStartTime] = useState('');
   const [endTime, setEndTime] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title && startDate && endDate && startTime && endTime) {
-      addEvent({ title, startDate, endDate, startTime, endTime });
+    if (title && startDate && startTime && endTime) {
+      addEvent({ title,
+         startDate, 
+          // endDate,
+          startTime,
+          endTime });
       setTitle('');
       setStartDate('');
-      setEndDate('');
+      // setEndDate('');
       setStartTime('');
       setEndTime('');
     }
@@ -29,10 +33,10 @@ const EventForm = ({ addEvent }) => {
         Start Date:
         <input type="date" value={startDate} onChange={(e) => setStartDate(e.target.value)} />
       </label>
-      <label>
+      {/* <label>
         End Date:
-        <input type="date" value={endDate} onChange={(e) => setEndDate(e.target.value)} />
-      </label>
+        <input type="date" value={endDate} onChange={(e) => setEndDate(startDate)} />
+      </label> */}
       <label>
         Start Time:
         <input type="time" value={startTime} onChange={(e) => setStartTime(e.target.value)} />
