@@ -1,6 +1,8 @@
 // Navbar.js
 import React, { useState } from 'react';
 import './Navbar.css';
+import logo from './images/logo.jpg'
+
 
 const Navbar = () => {
   const [showNotification, setShowNotification] = useState(false);
@@ -13,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1 className="text-4xl font-semibold">MH GM </h1>
+      <img className='h-12 border rounded-xl' src={logo}/>
       <button className="h-10 w-44 border-0 rounded-md bg-sky-400" onClick={handleNotificationClick}>
         Show Notification
       </button>

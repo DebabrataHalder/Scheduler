@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.event-color-red {
+  background-color: red;
+}
+
+.event-color-yellow {
+  background-color: yellow;
+}
+
+.event-color-green {
+  background-color: green;
+}
+
+.event-color-default {
+  background-color: blue; /* Default background color */
+}

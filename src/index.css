@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.event-color-red {
+    background-color: rgb(255, 68, 0);
+  }
+  
+  .event-color-yellow {
+    background-color: yellow;
+  }
+  
+  .event-color-green {
+    background-color: rgb(149, 255, 0);
+  }
+  
+  .event-color-default {
+    background-color: white; /* Default background color */
+  }

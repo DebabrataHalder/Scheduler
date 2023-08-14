@@ -19,6 +19,7 @@ const CalendarComponent = () => {
       title: event.title,
       start: `${event.startDate}T${event.startTime}`,
       end: `${event.startDate}T${event.endTime}`,
+      classNames: [`event-color-${event.backgroundColor || 'default'}`],
     }));
   };
 

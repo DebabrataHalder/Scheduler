@@ -3,12 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.69);
     color: white;
-    height: 50px;
+    height:70px;
   }
   
-  .notification-button {
+  #notification-button {
     background-color: #007bff;
     color: white;
     border: none;
